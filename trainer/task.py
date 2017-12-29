@@ -21,7 +21,7 @@ import json
 import os
 
 import trainer.model as model
-
+import keras
 from keras.models import load_model
 import model
 from tensorflow.python.lib.io import file_io
@@ -45,7 +45,7 @@ class ContinuousEval(keras.callbacks.Callback):
                eval_files,
                learning_rate,
                job_dir,
-               steps=1000):
+               steps=10):
     self.eval_files = eval_files
     self.eval_frequency = eval_frequency
     self.learning_rate = learning_rate
