@@ -210,8 +210,7 @@ if __name__ == "__main__":
                      type=int,
                      default=1,
                      help='Number of epochs during evaluation')
-  parser.add_argument(''
-                      '',
+  parser.add_argument('--num-epochs',
                       type=int,
                       default=20,
                       help='Maximum number of epochs on which to train')
